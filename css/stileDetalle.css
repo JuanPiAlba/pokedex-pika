@@ -1,0 +1,8 @@
+.mainDetalle{
+    background-image: linear-gradient(
+        to bottom,
+        transparent,
+        grey
+        ),
+        url(/img/wallpaperbetter.jpg);
+    }
