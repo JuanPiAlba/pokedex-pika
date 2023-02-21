@@ -31,3 +31,14 @@
 .back {
     transform: rotateY(180deg);
 }
+
+.back img{
+    max-height: 450px;
+}
+
+#team .container-fluid{
+    background-attachment: fixed;
+    background-image: url('../img/about-us-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
