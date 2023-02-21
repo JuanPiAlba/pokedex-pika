@@ -23,7 +23,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/stileDetalle.css">
+    <link rel="stylesheet" href="/css/stileDetalle.css" />
   </head>
   <body>
     <header>
@@ -97,33 +97,193 @@
       </nav>
     </header>
     <main id="mainDetalle" class="mainDetalle">
-        <section class="container">
-            <p class="text-light py-3">
-              Los datos fueron tomados de la siguiente web:
-              <a href="www.pokemon.com/el/pokedex"> www.pokemon.com/el/pokedex </a>
+      <section class="container">
+        <p class="text-light py-3">
+          Los datos fueron tomados de la siguiente web:
+          <a href="www.pokemon.com/el/pokedex"> www.pokemon.com/el/pokedex </a>
+        </p>
+      </section>
+      <!-- PAGINATION -->
+      <section
+        class="container-fluid d-flex text-center justify-content-between"
+      >
+        <button
+          type="button"
+          class="btn btn-outline-secondary btn-lg m-5 d-flex justify-content-center align-content-center"
+        >
+          <i class="bi bi-arrow-left-circle m-2 text-danger"></i>
+          <p class="m-2 text-danger">N.°1008</p>
+          <p class="m-2 text-light">Miraidon</p>
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary btn-lg m-5 d-flex justify-content-center align-content-center"
+        >
+          <p class="m-2 text-light">Ivasaur</p>
+          <p class="m-2 text-danger">N.°0002</p>
+          <i class="bi bi-arrow-right-circle m-2 text-danger"></i>
+        </button>
+      </section>
+      <!-- DESARROLLO DE POKEMON -->
+      <section class="container">
+        <h1 class="text text-center text-light">Bulbasaur N.° 0001</h1>
+      </section>
+      <section class="container mt-5">
+        <article class="row">
+          <div class="col-sm-12 col-md-6 text-center mb-3">
+            <img
+              src="/img/Bulbasaur 0001.png"
+              alt="Imagen de Bulbasaur"
+              class="w-75"
+            />
+          </div>
+          <div class="col-sm-12 col-md-6 mt-3 lead text-light">
+            <p>
+              Este Pokémon nace con una semilla en el lomo, que brota con el
+              paso del tiempo.
             </p>
-          </section>
-          <!-- PAGINATION -->
-          <section class="container-fluid d-flex text-center justify-content-between">
-                <button type="button" class="btn btn-outline-secondary btn-lg m-5 d-flex justify-content-center align-content-center ">
-                    <i class="bi bi-arrow-left-circle m-2 text-danger"></i>
-                    <p class="m-2 text-danger">N.°1008</p>
-                    <p class="m-2">Miraidon</p> 
-                </button>    
-            <button type="button" class="btn btn-outline-secondary btn-lg m-5 d-flex justify-content-center align-content-center">
-                <p class="m-2">Ivasaur</p>
-                <p class="m-2 text-danger">N.°0002</p> 
-                <i class="bi bi-arrow-right-circle m-2 text-danger"></i>
-            </button>
-          </section>
-          <section class="container">
-            <h1 class="text text-center text-light">Bulbasaur N.° 0001</h1>
-        </section>
-        <section>
-            <img src="/img/Bulbasaur 0001.png" alt="Imagen de Bulbasaur">
+            <div class="col-sm-12 col-md-7 lead text-light">
+              <div class="row">
+                <p class="col-sm-12 col-md-5 m-2 p-0">Versiones</p>
+                <img
+                  class="col-sm-12 col-md-3 w-25"
+                  src="/img/blue pokeball.png"
+                  alt="red pokeball"
+                />
+                <img
+                  class="col-sm-12 col-md-3 w-25"
+                  src="/img/red pokebal 2.png"
+                  alt="blue pokeball"
+                />
+              </div>
+              <div class="mt-5">
+                <div class="row">
+                  <ul class="list-group col-sm-12 col-md-6">
+                    <li class="list-group-item list-group-item-primary">Altura</li>
+                    <li class="list-group-item list-group-item-primary">0.7 m</li>
+                    <li class="list-group-item list-group-item-primary">Peso</li>
+                    <li class="list-group-item list-group-item-primary">
+                      6,9 kgs
+                    </li>
+                    <li class="list-group-item list-group-item-primary">
+                      Sexo
+                      <i class="bi bi-gender-female"></i>
+                      <i class="bi bi-gender-male"></i>
+                    </li>
+                  </ul>
+                  <ul class="list-group col-sm-12 col-md-6">
+                    <li class="list-group-item list-group-item-primary">
+                      Categoria
+                    </li>
+                    <li class="list-group-item list-group-item-primary">
+                      Semilla
+                    </li>
+                    <li class="list-group-item list-group-item-primary">
+                      Habilidad
+                    </li>
+                    <li class="list-group-item list-group-item-primary">
+                      Espesura
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex">
+            <p>Tipo: </p>
+            <p>Planta</p>
+            <p>Veneno</p>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Default striped example"
+            aria-valuenow="10"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div class="progress-bar progress-bar-striped" style="width: 10%">
+              Puntos de Salud
+            </div>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Success striped example"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div
+              class="progress-bar progress-bar-striped bg-success"
+              style="width: 25%"
+            >
+              Ataque
+            </div>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Info striped example"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div
+              class="progress-bar progress-bar-striped bg-info"
+              style="width: 50%"
+            >
+              Defensa
+            </div>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Warning striped example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div
+              class="progress-bar progress-bar-striped bg-warning"
+              style="width: 75%"
+            >
+              Ataque Especial
+            </div>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Danger striped example"
+            aria-valuenow="100"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div
+              class="progress-bar progress-bar-striped bg-danger"
+              style="width: 100%"
+            >
+              Defensa Especial
+            </div>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Info striped example"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div
+              class="progress-bar progress-bar-striped bg-info"
+              style="width: 25%"
+            >
+              Velocidad
+            </div>
+          </div>
 
-        </section>
-
+        </article>
+      </section>
     </main>
     <footer class="text-center p-4 text-light container-fluid bg-danger">
       <p>&copy; Todos los derechos reservados</p>
