@@ -1,11 +1,45 @@
-
-.banner-Principal{
-        max-height: 285px;
-        object-fit: cover;
+body{
+    background: #fff;
 }
 
-.gradiente-Pokeball{
-        background-color: #ffffff;
-background-image: linear-gradient(43deg, #ffffff 30%, #000000 50%, #dd1f16 72%);
+.tipo-pokemon{
+    display: flex;
+    color: white;
+    padding-right: 10px;
+    border-radius: 10px; 
+}
 
+.planta{
+    background-color: rgb(11, 153, 11);
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+.veneno{
+    background-color: rgb(109, 65, 151);
+}
+
+.fuego{
+    background: rgb(219, 147, 13);
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+.volador{
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+
+.agua{
+    background:  #0093E9;
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: center; 
+}
+
+.pokedex-card{
+    display: flex;
 }
