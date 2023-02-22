@@ -1,45 +1,88 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 body{
     background: #fff;
 }
 
+.pokedex-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px;
+    justify-content: space-between;
+}
+
+.card{
+    margin-top: 20px;
+}
+
 .tipo-pokemon{
     display: flex;
-    color: white;
-    padding-right: 10px;
-    border-radius: 10px; 
 }
+
+/* utilidades */
 
 .planta{
     background-color: rgb(11, 153, 11);
-    padding-right: 10px;
-    border-radius: 5px;
-    text-align: center; 
+    display: flex;
+    border-radius: 10px;
+    color: white;
+    justify-content: center;
+    width: 70px;
+    height: 20px;
+    margin: 0px 5px;
 }
 
 .veneno{
     background-color: rgb(109, 65, 151);
+    display: flex;
+    border-radius: 10px;
+    color: white;
+    justify-content: center;
+    width: 70px;
+    height: 20px;
 }
 
 .fuego{
     background: rgb(219, 147, 13);
-    padding-right: 10px;
-    border-radius: 5px;
-    text-align: center; 
+    display: flex;
+    border-radius: 10px;
+    color: white;
+    justify-content: center;
+    width: 70px;
+    height: 20px;
 }
 
 .volador{
     background-color: #0093E9;
 background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-
+display: flex;
+border-radius: 10px;
+color: white;
+justify-content: center;
+width: 70px;
+height: 20px;
+margin: 0px 10px;
 }
 
 .agua{
     background:  #0093E9;
-    padding-right: 10px;
-    border-radius: 5px;
-    text-align: center; 
+    display: flex;
+    border-radius: 10px;
+    color: white;
+    justify-content: center;
+    width: 70px;
+    height: 20px;
 }
 
-.pokedex-card{
+.bicho{
+    background:  rgba(46, 155, 46, 0.733);
     display: flex;
+    border-radius: 10px;
+    color: white;
+    justify-content: center;
+    width: 70px;
+    height: 20px;
 }
