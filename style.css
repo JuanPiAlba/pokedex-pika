@@ -86,3 +86,14 @@ margin: 0px 10px;
     width: 70px;
     height: 20px;
 }
+
+.banner-Principal{
+    max-height: 285px;
+    object-fit: cover;
+}
+
+.gradiente-Pokeball{
+    background-color: #ffffff;
+background-image: linear-gradient(43deg, #ffffff 30%, #000000 50%, #dd1f16 72%);
+
+}
