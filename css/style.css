@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Flexo;
+    src: url('../Flexo-Regular.ttf');
+}
+
 .card-img {
     perspective: 1000;
     background: transparent;
@@ -41,4 +46,8 @@
     background-image: url('../img/about-us-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+h2{
+    font-family: Flexo, Courier, monospace;
 }
