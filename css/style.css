@@ -3,6 +3,7 @@
     src: url('../Flexo-Regular.ttf');
 }
 
+/* CSS ABOUT US*/
 .card-img {
     perspective: 1000;
     background: transparent;
@@ -52,6 +53,8 @@
 h2{
     font-family: Flexo, Courier, monospace;
 }
+
+/* CSS ABOUT US END*/
 
 * {
   padding: 0px;
@@ -175,3 +178,4 @@ body {
     height: 20vh;
   }
 }
+
