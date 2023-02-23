@@ -24,6 +24,7 @@
 
 .front, .back {
     backface-visibility: hidden;
+    filter: drop-shadow(4px 5px 6px black);
     position: absolute;
 }
 /* front placed above back */
