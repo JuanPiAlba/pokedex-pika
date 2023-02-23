@@ -1,37 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pokedex de GRupo Pika Pika" />
-    <meta
-      name="keywords"
-      content="pokedex, pokemones, evoluciones,proyecto,stats,etc"
-    />
-    <meta
-      name="author"
-      content="Esteban Molina, Lucia Frias, Gerardo Mansilla, Juan Pablo Alba"
-    />
-    <link rel="stylesheet" href="./style/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pokedex de GRupo Pika Pika">
+    <meta name="keywords" content="pokedex, pokemones, evoluciones,proyecto,stats,etc">
+    <meta name="author" content="Esteban Molina, Lucia Frias, Gerardo Mansilla, Juan Pablo Alba">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
 
     <title>Pokedex</title>
-  </head>
-  <body>
-    <header><h1>Navbar</h1></header>
+</head>
+<body class="gradiente-Pokeball">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-danger border-danger-subtle">
+        <div class="container">
+            <a href="#" class="me-3 text-light text-decoration-none fs-5 nabvar-brand">Pokedex</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 opacity-50">
+                  <li class="nav-item">
+                    <a class="text-light nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="text-light nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorias
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Eléctricos</a></li>
+                      <li><a class="dropdown-item" href="#">Dragón</a></li>
+                      <li><a class="dropdown-item" href="#">Veneno</a></li>
+                      <li><a class="dropdown-item" href="#">Psíquico</a></li>
+                      <li><a class="dropdown-item" href="#">Fantasma</a></li>
+                      <li><a class="dropdown-item" href="#">Roca</a></li>
+                      <li><a class="dropdown-item" href="#">Agua</a></li>
+                      <li><a class="dropdown-item" href="#">Tierra</a></li>
+                      <li><a class="dropdown-item" href="#">Normal</a></li>
+                      <li><a class="dropdown-item" href="#">Volador</a></li>
+                      <li><a class="dropdown-item" href="#">Planta</a></li>
+                      <li><a class="dropdown-item" href="#">Bicho</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar pokemon" aria-label="Search">
+                  <button class="border-light text-light btn" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </div>
+        </div>
+    </nav>
+</header>
     <main>
-      <div class="pokedex-card">
-        <div class="card" style="width: 18rem">
+      <div id="carouselExampleIndicators" class="container carousel slide my-3">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/bannerPika.png" class="d-block w-100 banner-Principal" alt="Banner Pikachu">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/bannerPokemon1.jpg" class="d-block w-100 banner-Principal" alt="Imagen Pokemon 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/bannerPokemon2.webp" class="d-block w-100 banner-Principal" alt="Imagen Pokemon 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/bannerPokemon3.jpg" class="d-block w-100 banner-Principal" alt="Imagen Pokemon 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="justify-content-center pokedex-card">
+        <div class="card">
           <img
             src="./img/bulbasaur.png"
             class="card-img-top"
@@ -47,7 +105,7 @@
             <a href="#" class="btn btn-primary">Ver detalle</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             src="./img/002.png"
             class="card-img-top"
@@ -63,7 +121,7 @@
             <a href="#" class="btn btn-primary">Ver detalle</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             src="./img/003.png"
             class="card-img-top"
@@ -79,7 +137,7 @@
             <a href="#" class="btn btn-primary">Ver detalle</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             src="./img/004.png"
             class="card-img-top"
@@ -94,7 +152,7 @@
             <a href="#" class="btn btn-primary">Ver detalle</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             src="./img/005.png"
             class="card-img-top"
@@ -109,7 +167,7 @@
             <a href="#" class="btn btn-primary">Ver detalle</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             src="./img/006.png"
             class="card-img-top"
@@ -125,7 +183,7 @@
             <a href="#" class="btn btn-primary">Ver detalle</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             src="./img/007.png"
             class="card-img-top"
@@ -140,7 +198,7 @@
             <a href="#" class="btn btn-primary">Ver detalle</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             src="./img/008.png"
             class="card-img-top"
@@ -155,7 +213,7 @@
             <a href="#" class="btn btn-primary">Ver detalle</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             src="./img/009.png"
             class="card-img-top"
@@ -170,7 +228,7 @@
             <a href="#" class="btn btn-primary">Ver detalle</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
             src="./img/010.png"
             class="card-img-top"
@@ -185,7 +243,7 @@
             <a href="#" class="btn btn-primary">Ver detalle</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img src="./img/011.png" class="card-img-top" alt="imagen de Metapod" />
           <div class="card-body">
             <p>N. 0011</p>
@@ -196,7 +254,7 @@
             <a href="#" class="btn btn-primary">Ver detalles</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img src="./img/012.png" class="card-img-top" alt="imagen de Butterfree" />
           <div class="card-body">
             <p>N. 0012</p>
@@ -208,7 +266,7 @@
             <a href="#" class="btn btn-primary">Ver detalles</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img src="./img/013.png" class="card-img-top" alt="Imagen de Weedle" />
           <div class="card-body">
             <p>N. 0013</p>
@@ -220,7 +278,7 @@
             <a href="#" class="btn btn-primary">Ver detalles</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img src="./img/014.png" class="card-img-top" alt=".Imagen de Kakuna" />
           <div class="card-body">
             <p>N. 0014</p>
@@ -232,7 +290,7 @@
             <a href="#" class="btn btn-primary">Ver detalles</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img src="./img/015.png" class="card-img-top" alt="Imagen de Beedrill" />
           <div class="card-body">
             <p>N. 0015</p>
@@ -244,7 +302,7 @@
             <a href="#" class="btn btn-primary">Ver detalles</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img src="./img/016.png" class="card-img-top" alt="Imagen de Pidgey" />
           <div class="card-body">
             <p>N. 0016</p>
@@ -256,7 +314,7 @@
             <a href="#" class="btn btn-primary">Ver detalles</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img src="./img/017.png" class="card-img-top" alt="Imagen de Pidgeotto" />
           <div class="card-body">
             <p>N. 0017</p>
@@ -268,7 +326,7 @@
             <a href="#" class="btn btn-primary">Ver detalles</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img src="./img/018.png" class="card-img-top" alt=".Imagen de Pidgeot" />
           <div class="card-body">
             <p>N. 0018</p>
@@ -280,7 +338,7 @@
             <a href="#" class="btn btn-primary">Ver detalles</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img src="./img/019.png" class="card-img-top" alt="Imagen de Rattata" />
           <div class="card-body">
             <p>N. 0019</p>
@@ -291,7 +349,7 @@
             <a href="#" class="btn btn-primary">Ver detalles</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img src="./img/020.png" class="card-img-top" alt="Imagen de Raticate" />
           <div class="card-body">
             <p>N. 0020</p>
@@ -302,7 +360,7 @@
             <a href="#" class="btn btn-primary">Ver detalles</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img src="./img/021.png" class="card-img-top" alt="imagen de Spearow" />
           <div class="card-body">
             <p>N. 0021</p>
@@ -314,7 +372,7 @@
             <a href="#" class="btn btn-primary">Ver detalles</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img src="./img/022.png" class="card-img-top" alt="imagen de Fearow" />
           <div class="card-body">
             <p>N. 0022</p>
@@ -326,7 +384,7 @@
             <a href="#" class="btn btn-primary">Ver detalles</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img src="./img/023.png" class="card-img-top" alt="imagen de Ekans" />
           <div class="card-body">
             <p>N. 0023</p>
@@ -337,10 +395,10 @@
             <a href="#" class="btn btn-primary">Ver detalles</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img src="./img/024.png" class="card-img-top" alt="imagen de arbok" />
           <div class="card-body">
-            <p>N. 0024</p>
+            <p>N. 0023</p>
             <h5 class="card-title">Arbok</h5>
             <div class="tipo-pokemon">
               <span class="card-text veneno">Veneno</span>
@@ -350,10 +408,9 @@
         </div>
       </div>
     </main>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <footer class="text-center p-4 text-light container-fluid bg-danger">
+      <p>&copy; Todos los derechos reservados</p>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
 </html>

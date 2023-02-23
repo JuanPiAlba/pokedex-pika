@@ -8,6 +8,7 @@ body{
 }
 
 
+
 .pokedex-card{
     display: flex;
     flex-wrap: wrap;
@@ -21,10 +22,17 @@ body{
 
 
 
+
+
 .tipo-pokemon{
     display: flex;
 }
 
+.card-text{
+    margin-right: 10px;
+}
+
+/* utilidades */ /*Cambio de height a 25px*/
 .card-text{
     margin-right: 10px;
 }
@@ -40,6 +48,8 @@ body{
     width: 70px;
     height: 25px;
     margin-right: 5px;
+    height: 25px;
+    margin-right: 5px;
 }
 
 .veneno{
@@ -49,6 +59,8 @@ body{
     color: white;
     justify-content: center;
     width: 70px;
+    height: 25px;
+    margin-right: 5px;
     height: 25px;
     margin-right: 5px;
 }
@@ -62,9 +74,19 @@ body{
     width: 70px;
     height: 25px;
     margin-right: 5px;
+    height: 25px;
+    margin-right: 5px;
 }
 
 .volador{
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%); /* Volador como el de la Pagina*/
+    display: flex;
+    border-radius: 10px;
+    color: white;
+    justify-content: center;
+    width: 70px;
+    height: 25px;
+    margin-right: 5px;
     background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%); /* Volador como el de la Pagina*/
     display: flex;
     border-radius: 10px;
@@ -84,6 +106,8 @@ body{
     width: 70px;
     height: 25px;
     margin-right: 5px;
+    height: 25px;
+    margin-right: 5px;
 }
 
 .bicho{
@@ -93,7 +117,6 @@ body{
     color: white;
     justify-content: center;
     width: 70px;
-    height: 25px;
     margin-right: 5px;
 }
 
@@ -111,4 +134,3 @@ body{
 
 .btn-primary{  /* Margin del boton "Ver detalles" */
     margin-top: 10px;
-}
